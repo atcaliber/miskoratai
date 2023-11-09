@@ -1,0 +1,298 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Overpass', sans-serif;
+
+ /* outline: red solid; */
+} 
+/* Apply a box-sizing reset to all elements */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* CSS RESET END */
+
+body {
+    background: #CAC9C9;
+    user-select: none;
+}
+
+/* Apply styles to the navbar */
+.navbar {
+    display: flex;
+    background: linear-gradient(to right, #CAC9C9, #73b29e, #4d8c78, #325b4e, #172a24);
+    color: #fff; /* Text color for the navbar */
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+/* Style the navbar links (customize as needed) */
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar-links li {
+    list-style: none;
+    transition: transform 0.5s ease;
+}
+
+.navbar-links a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 1.5rem;
+    font-size: 18px;
+}
+
+.navbar-links li:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1.05);
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 425px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+.video-container {
+    width: 100%;
+    height: 40vh; /* Set the container's height to 15% of the viewport height */
+    overflow: hidden; 
+}
+
+video {
+    width: 100%; /* Set the video's width to 100% */
+    height: 100%;
+    object-fit: cover; /* Optional, maintains aspect ratio while covering the container */
+}
+
+/* baigiasi navbar */
+
+
+
+/* LOGO */
+.logo {
+    display: flex;
+    width: 10%;
+    align-items: center; 
+    height: 15vh;
+}
+
+.logo img {
+    width: 100%; /* Set a maximum width for the logo to prevent it from creeping out */
+    max-height: 100%;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: transform 0.5s ease;
+}
+
+.logo:hover img {
+    transform: scale(1.02);
+    transition: transform 0.5s ease;
+}
+
+
+/* LOGO END */
+
+
+
+/* PRODUKTAI */
+
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 100%;
+    gap: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 60vw;
+    height: 75vh;
+    background: transparent;
+    border: black 1 px solid;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px black;
+    transition: transform 0.5s ease;
+}
+
+.card:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1.02);
+}
+
+.photo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+    margin: 10px;
+}
+
+.photo-container img {
+    border-radius: 12px;
+    width: 33vw;
+    height: 100%;
+}
+
+.card-text {
+    /* text-align: center; */
+    flex: 1;
+    font-size: 15px;
+}
+
+
+.card-button {
+    display: flex;
+   justify-content: center;
+}
+
+/* PRODUKTAI END */
+
+/* BUTTON */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    margin-bottom: 75px;
+   }
+ 
+   .button-container a {
+     text-decoration: none;
+     color: inherit;
+     padding: 15px;
+     border: 1px solid black;
+     border-radius: 15px;
+     margin: 25px;
+     width: 9vw;
+     text-align: center;
+     cursor: pointer;
+     background: #add2c6;
+     box-shadow: 0px 0px 0px #325b4e;
+     transition: transform 0.5s ease, box-shadow 0.5s ease; 
+   }
+ 
+   .button-container a:hover {
+     transition: transform 0.5s ease, box-shadow 0.5s ease;
+     transform: scale(1.02);
+     box-shadow: 0px 0px 10px #325b4e;
+   }
+ /* BUTTON END */
+ 
+ 
+ 
+ /* FOOTER */
+ 
+ .footer {
+     height: 15vh;
+     width: 100%;
+     background: linear-gradient(to right, #CAC9C9, #73b29e, #4d8c78, #325b4e, #172a24);
+     display: flex;
+     align-content: center;
+     justify-content: center;
+ }
+ 
+ .footer-tekstas {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 20%;
+     height: 100%;
+     text-align: center;
+ }
+ 
+ 
+ .footer-socials {
+     display: flex;
+     width: 100%;
+     height: 100%;
+     align-items: center;
+     justify-content: center;
+     gap: 50px;
+ }
+ 
+ .footer-socials a {
+     font-size: 50px;
+     transition: transform 0.5s ease;
+ }
+ 
+ .footer-socials a:hover {
+     transform: scale(1.1);
+     transition: transform 0.5s ease;
+ }
+ 
+ 
