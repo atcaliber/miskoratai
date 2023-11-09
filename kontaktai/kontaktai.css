@@ -273,13 +273,13 @@ body {
 .text-container img {
     height: 25vh;
     object-fit: contain;
-    transition: transform 0.5s ease;
+    transition: transform 0.8s ease;
     border-radius: 5px;
 }
 
 .text-container img:hover {
     transform: scale(1.5);
-    transition: transform 0.5s ease;
+    transition: transform 0.8s ease;
 }
 
 /* CONTACT CONTAINER END */
