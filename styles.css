@@ -123,7 +123,7 @@ body {
 
     .navbar-links ul li a {
         padding: 1rem 1rem;
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .navbar-links.active {
@@ -142,6 +142,7 @@ body {
 @media (max-width: 425px) {
     .video-container {
         height: 22vh;
+        display: none;
     }
 }
 
@@ -173,6 +174,7 @@ body {
 @media (max-width: 425px) {
     .logo {
         height: 12vh;
+        width: 18vw;
     }
 }
 
@@ -255,9 +257,17 @@ body {
     transition: transform 0.5s ease;
 }
 
+@media (min-width: 425px) and (max-width: 768px) {
+    .ideja-text {
+        font-size: 2vw;
+        width: 70%;
+        margin: 50px;
+    }
+}
+
 @media (max-width: 425px) {
     .ideja-text {
-        font-size: 2.5vw;
+        font-size: 3.2vw;
         width: 70%;
         margin: 50px;
     }
@@ -299,10 +309,18 @@ body {
     transition: transform 0.5s ease;
 }
 
+@media (min-width: 425px) and (max-width: 768px) {
+    .traktor-tekstas {
+        margin: 50px;
+        font-size:2vw;
+        width: 70%;
+    }
+}
+
 @media (max-width: 425px) {
     .traktor-tekstas {
         margin: 50px;
-        font-size:2.5vw;
+        font-size:3.2vw;
         width: 70%;
     }
 }
@@ -397,6 +415,12 @@ body {
 .footer-socials a {
     font-size: 3.5vw;
     transition: transform 0.5s ease;
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    .footer-socials a {
+        font-size: 8vw;
+    }
 }
 
 @media (max-width: 425px) {

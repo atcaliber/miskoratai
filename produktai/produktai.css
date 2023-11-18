@@ -7,17 +7,23 @@
 
  /* outline: red solid; */
 } 
+
+
 /* Apply a box-sizing reset to all elements */
 *, *::before, *::after {
     box-sizing: border-box;
 }
+
 
 img {
     display: block;
     max-width: 100%;
 }
 
+
 /* CSS RESET END */
+
+
 
 body {
     background: #CAC9C9;
@@ -59,7 +65,7 @@ body {
     text-decoration: none;
     color: #fff;
     padding: 1.5rem;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 
 .navbar-links li:hover {
@@ -117,11 +123,12 @@ body {
 
     .navbar-links ul li a {
         padding: 1rem 1rem;
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .navbar-links.active {
         display: flex;
+
     }
 }
 
@@ -135,6 +142,7 @@ body {
 @media (max-width: 425px) {
     .video-container {
         height: 22vh;
+        display: none;
     }
 }
 
@@ -166,6 +174,7 @@ body {
 @media (max-width: 425px) {
     .logo {
         height: 12vh;
+        width: 18vw;
     }
 }
 
@@ -202,9 +211,26 @@ body {
     align-items: center;
 }
 
+@media (max-width: 425px) {
+    .card-container {
+        gap: 0px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    .card-container {
+        margin-bottom: 0px;
+        gap: 25px;
+        margin-top: 50px;
+    }
+}
+
 .card {
     width: 250px;
-    height: 375px;
+    /* height: 375px; */
+    height: 55vh;
     background: transparent;
     border: black 1 px solid;
     margin: 35px;
@@ -224,6 +250,8 @@ body {
 
 .photo-container img {
     border-radius: 8px;
+    width: 100%;
+    height: 22vh;
 }
 
 .card-text {
@@ -271,6 +299,15 @@ body {
     }
 }
 
+@media (max-width: 425px) {
+    .card-button a {
+        width: 20vw;
+    }
+    .card-button p {
+        font-size: 4vw;
+    }
+}
+
 /* PRODUKTU KORTELES END */
 
 
@@ -291,6 +328,7 @@ body {
     border-radius: 15px;
     margin: 25px;
     width: 9vw;
+    font-size: 1.3vw;
     text-align: center;
     cursor: pointer;
     background: #add2c6;
@@ -302,6 +340,27 @@ body {
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     transform: scale(1.02);
     box-shadow: 0px 0px 10px #325b4e;
+  }
+
+  @media (min-width: 425px) and (max-width: 768px) {
+    .button-container a {
+        width: 20vw;
+        font-size: 2.5vw;
+    }
+    .button-container {
+        margin-top: 15px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .button-container a {
+        width: 35vw;
+        font-size: 5vw;
+    }
+
+    .button-container {
+        margin-top: 0px;
+    }
   }
 /* BUTTON END */
 

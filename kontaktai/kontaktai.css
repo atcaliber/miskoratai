@@ -135,6 +135,7 @@ body {
 @media (max-width: 425px) {
     .video-container {
         height: 22vh;
+        display: none;
     }
 }
 
@@ -166,6 +167,7 @@ body {
 @media (max-width: 425px) {
     .logo {
         height: 12vh;
+        width: 18vw;
     }
 }
 
@@ -185,6 +187,9 @@ body {
 
 /* LOGO END */
 
+
+
+
 /* CONTACT CONTAINER */
 
 .contact-container {
@@ -193,10 +198,16 @@ body {
     /* height: 100vh; */
 }
 
-@media (max-width: 768px) {
+@media (min-width: 425px) and (max-width: 768px) {
     .contact-container {
         flex-direction: column;
         margin: 25px;
+    }
+}
+
+@media (max-width: 425px) {
+    .contact-container {
+        flex-direction: column;
     }
 }
 
@@ -215,7 +226,7 @@ body {
 
 @media (max-width: 768px) {
     .img-container img {
-        width: 70%;
+        width: 80%;
     }
 }
 
@@ -250,13 +261,21 @@ body {
 
 @media (max-width: 768px) {
     .text-container p {
-        font-size: 2.5vw;
+        font-size: 2.8vw;
+    }
+
+    .text-container i {
+        font-size: 3vw;
     }
 }
 
 @media (max-width: 425px) {
     .text-container p {
-        font-size: 3vw;
+        font-size: 4vw;
+    }
+
+    .text-container i {
+        font-size: 5vw;
     }
 }
 
@@ -277,10 +296,10 @@ body {
     border-radius: 5px;
 }
 
-.text-container img:hover {
+/* .text-container img:hover {
     transform: scale(1.5);
     transition: transform 0.8s ease;
-}
+} */
 
 /* CONTACT CONTAINER END */
 
