@@ -75,7 +75,7 @@ body {
 
 .toggle-button {
     position: absolute;
-    top: 1.65rem;
+    top: 1.4rem;
     right: 1rem;
      display: none;
     flex-direction: column;
@@ -85,7 +85,7 @@ body {
 }
 
 .toggle-button .bar {
-    height: 3px;
+    height: 4px;
     width: 100%;
     background-color: white;
     border-radius: 10px;
