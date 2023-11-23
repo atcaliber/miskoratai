@@ -198,16 +198,79 @@ body {
 
 
 /* FUNDING */
-.funding-div {
-    display: flex;
-    margin: 25px;
+
+.paramos-pavadinimas {
+    width: 100%;
+    max-height: 30vh;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.75em;
 }
 
-.funding-text {
+@media (max-width: 425px) {
+    .paramos-pavadinimas {
+        padding-top: 0px;
+        font-size: 8px;
+    }
+}
+
+.funding-div {
     margin: 25px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 12px black;
+    border-radius: 10px;
+}
+
+
+.flex-wrap {
     display: flex;
-    justify-content: center;
+}
+
+@media (max-width: 425px) {
+    .flex-wrap {
+        flex-direction: column;
+    }
+}
+
+.funding-text  {
+    padding: 25px 25px 0px 10px;
+    display: flex;
+    /* justify-content: center; */
     align-items: center;
+    font-size: 1.3vw;
+    text-align: justify;
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    .funding-text {
+        font-size: 1.9vw;
+    }
+}
+
+@media (max-width: 425px) {
+    .funding-text {
+        font-size: 0.65rem;
+        padding-left: 25px;
+    }
+}
+
+.lower-text {
+    font-size: 1.3vw;
+    padding: 0px 25px 25px 25px;
+    text-align: justify;
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    .lower-text {
+        font-size: 1.9vw;
+    }
+}
+
+@media (max-width: 425px) {
+    .lower-text {
+        font-size: 0.65rem;
+    }
 }
 
 
@@ -225,8 +288,45 @@ body {
     .funding-div {
         flex-direction: column;
     }
+
+    .photo-container img {
+        margin: auto;
+    }
 }
 
+.kpflogo-text {
+    display: flex;
+    font-size: 1.3vw;
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    .kpflogo-text {
+        font-size: 1.9vw;
+    }
+}
+
+@media (max-width: 425px) {
+    .kpflogo-text {
+        flex-direction: column;
+        font-size: 0.65rem;
+    }
+
+}
+
+.kpflogo-text img {
+    width: 20vw;
+    object-fit: contain;
+    padding: 0px 5px 0px 15px;
+}
+
+@media (max-width: 425px) {
+    .kpflogo-text img {
+            display: flex;
+            width: 40vw;
+            padding: 0;
+            margin: 30px auto 0px;
+    }
+}
 
 
 
