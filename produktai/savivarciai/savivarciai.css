@@ -261,6 +261,7 @@ body {
     justify-content: center;
     flex: 2;
     padding-left: 15px;
+    padding: 10px;
 }
 
 .photo-container img {
