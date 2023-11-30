@@ -64,7 +64,7 @@ body {
     display: block;
     text-decoration: none;
     color: #fff;
-    padding: 1.5rem;
+    padding: 1rem;
     font-size: 1.2vw;
 }
 
@@ -161,6 +161,7 @@ body {
 /* VIDEO NAVBAR END  */
 
 
+
 /* LOGO */
 .logo {
     display: flex;
@@ -227,7 +228,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    width: 70vw;
+    width: 75vw;
     height: 75vh;
     background: transparent;
     border: black 1 px solid;
@@ -259,54 +260,59 @@ body {
     align-items: center;
     justify-content: center;
     flex: 2;
-    /* margin: 10px; */
+    padding-left: 15px;
 }
 
 .photo-container img {
     border-radius: 12px;
-    max-width: 85%;
-    height: 65vh;
+    /* margin-left: 20px; */
+    max-width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+#betonas400 {
+    width: 75%;
 }
 
 @media (max-width: 425px) {
-    .photo-container img {
-        height: 30vh;
-        width: 100vw;
-    }
 
     .photo-container {
-        margin-top: 10px;
         width: 100%;
-    }
-}
-
-@media (min-width: 425px) and (max-width: 768px) {
-    .photo-container img {
-        max-height: 48vh;
-        width: 70vw;
+        padding: 10px 0px;
     }
 }
 
 .card-text {
     flex: 1;
-    font-size: 1em;
+    font-size: 1.2vw;
     margin: 5px;
 }
 
 .extra-text {
     /* text-align: center; */
     flex: 1;
-    font-size: 1em;
+    font-size: 1.2vw;
     margin: 5px;
 }
 
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 425px) and (max-width: 600px) {
     .card-text {
-        font-size: 0.7em;
+        font-size: 1.75vw;
     }
 
     .extra-text {
-        font-size: 0.7em;
+        font-size: 1.75vw;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .card-text {
+        font-size: 1.5vw;
+    }
+
+    .extra-text {
+        font-size: 1.5vw;
     }
 }
 
@@ -318,16 +324,15 @@ body {
         width: 90vw;
     }
     .card-text {
-         width: 50%;
+         width: 70%;
          font-size: 0.8em;
-         margin: 0;
     }
 
     .card-text h3 {
         text-align: center;
     }
     .extra-text {
-        width: 50%;
+        width: 70%;
         font-size: 0.8em;
         padding-bottom: 10px;
     }
