@@ -282,14 +282,13 @@ body {
 .card-text {
     flex: 1;
     font-size: 1.2vw;
-    margin: 5px;
+    padding: 5px;
 }
 
 .extra-text {
-    /* text-align: center; */
     flex: 1;
     font-size: 1.2vw;
-    margin: 5px;
+    padding: 15px;
 }
 
 @media (min-width: 425px) and (max-width: 600px) {
