@@ -229,7 +229,7 @@ body {
     align-items: center;
     gap: 10px;
     width: 75vw;
-    height: 75vh;
+    height: auto;
     background: transparent;
     border: black 1 px solid;
     border-radius: 10px;
@@ -239,7 +239,8 @@ body {
 
 @media (min-width: 425px) and (max-width: 768px) {
     .card {
-        height: 60vh;
+        /* height: 60vh; */
+        height: auto;
         width: 85vw;
     }
 }
@@ -293,11 +294,11 @@ body {
 
 @media (min-width: 425px) and (max-width: 600px) {
     .card-text {
-        font-size: 1.75vw;
+        font-size: 1.6vw;
     }
 
     .extra-text {
-        font-size: 1.75vw;
+        font-size: 1.6vw;
     }
 }
 

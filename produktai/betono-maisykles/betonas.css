@@ -203,7 +203,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-height: 100%;
+    height: auto;
     gap: 50px;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -229,7 +229,7 @@ body {
     align-items: center;
     gap: 10px;
     width: 75vw;
-    height: 75vh;
+    height: auto;
     background: transparent;
     border: black 1 px solid;
     border-radius: 10px;
@@ -239,7 +239,7 @@ body {
 
 @media (min-width: 425px) and (max-width: 768px) {
     .card {
-        height: 60vh;
+        height: auto;
         width: 85vw;
     }
 }
@@ -260,7 +260,7 @@ body {
     align-items: center;
     justify-content: center;
     flex: 2;
-    padding-left: 15px;
+    padding: 15px;
 }
 
 .photo-container img {
